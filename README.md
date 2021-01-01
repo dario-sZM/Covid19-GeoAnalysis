@@ -62,7 +62,7 @@ covid_data = covid19.drop(columns=['Province/State'])
 ````
 And to match what we see in worldometer, let's plot the total wordwide cases just for reference: 
 
-// Insert total cases chart //
+![](Images/Wordwide-Cases-Count.png)
 
 ## Data Visualization
 The data above gives us comprehensive access to the total cases in each indidual country, as well as recoveries, deaths and active cases. This gives us the ability to map out the full spectrum of the pandemic using the geopandas library. 
@@ -70,7 +70,7 @@ The data above gives us comprehensive access to the total cases in each indidual
 ### Conventional World Map View
 Already, we can see that Africa and Australasia have seen far less cases than the surrounding continents. However, due to the nature of the map I don't believe we really grasp the magnitude of case difference across the world. 
 
-// INSERT GLOBAL CHART // 
+![](Images/WorldCovidCasesMap.png)
 
 ### Bubble Map
 Let's take this representation in a different direction then... <br>
@@ -78,11 +78,11 @@ You can see below a density plot of cases per country (longitude and latitude) w
 <br>
 Here we see a much more prominent difference in case density across the world. Africa and Australia are just barely rocognisable compared to the surrounding continents. 
 
-// Insert bubble map // 
+![](Images/WorldCovidCasesBubbleMap.png)
 
 ### Contour Map
 If we trun to seaborn for a jointplot, we can map out the density of the COVID-19 cases uses a map similar to contours. It emphasises the prominence of the pandemic within the Northern Hemisphere. 
 And in the case of the southern hemispher, it is very much concenrated towards South America. 
 
-// Insert contour map ///
+![](Images/WorldCovidCasesContourMap.png)
 
